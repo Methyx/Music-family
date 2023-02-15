@@ -1,0 +1,35 @@
+.playlist {
+  width: 50%;
+  height: 50vmin;
+  margin-left: 5%;
+  margin-top: 10vmin;
+  background-color: rgb(150, 150, 150, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.playlist h1 {
+  font-size: 2vw;
+  margin: 5% 0;
+}
+.playlist .items {
+  width: 90%;
+  height: 80%;
+  overflow-y: scroll;
+  border: 3px solid black;
+  margin-bottom: 10px;
+}
+.playlist .title-item:nth-child(2n) {
+  background-color: rgba(153, 81, 81, 0.5);
+}
+.playlist .title-item:nth-child(2n + 1) {
+  background-color: rgba(171, 33, 33, 0.5);
+}
+
+@media screen and (max-width: 900px) {
+  .playlist {
+    width: 80%;
+  }
+}
