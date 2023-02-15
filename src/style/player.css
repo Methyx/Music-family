@@ -1,0 +1,17 @@
+.player {
+  width: 40%;
+  margin: 15vmin auto;
+  background-color: rgb(230, 230, 230, 0.8);
+  border-radius: 10px;
+}
+.player .rhap_container {
+  background-color: transparent;
+}
+.player .rhap_time {
+}
+
+@media screen and (max-width: 800px) {
+  .player {
+    width: 80%;
+  }
+}

@@ -2,37 +2,37 @@
   {
     "title": "The Loneliest",
     "author": "Maneskin",
-    "link": "../assets/The_Loneliest - Family.mp3",
+    "link": "/audio/The_Loneliest - Family.mp3",
     "image": "/img/Maneskin_logo.png"
   },
   {
     "title": "Final Masquerade",
     "author": "Linkin Park",
-    "link": "../assets/Final Masquerade v4.mp3.mp3",
+    "link": "/audio/Final Masquerade v4.mp3",
     "image": "/img/Logo_linkin_park.png"
   },
   {
     "title": "Just Tonight",
     "author": "The Pretty Reckless",
-    "link": "../assets/Just Tonight v3.mp3",
+    "link": "/audio/Just Tonight - v3.mp3",
     "image": "/img/The_Pretty_Reckless.png"
   },
   {
     "title": "Love Hurts",
     "author": "Incubus",
-    "link": "../assets/Love Hurts - Family v4.mp3",
+    "link": "/audio/Love Hurts - Family v4.mp3",
     "image": "/img/Incubus_Logo.png"
   },
   {
     "title": "What I've Done",
     "author": "Linkin Park",
-    "link": "../assets/What i ve done - Family.mp3",
+    "link": "/audio/What i ve done - Family.mp3",
     "image": "/img/Logo_linkin_park.png"
   },
   {
     "title": "Your Song",
     "author": "Elton John",
-    "link": "../assets/Your Song - V4.mp3",
+    "link": "/audio/Your Song - V4.mp3",
     "image": "/img/Elton_John_Logo.svg"
   }
 ]

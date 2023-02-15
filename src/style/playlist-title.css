@@ -4,10 +4,6 @@
   display: flex;
   padding: 0 10px;
 }
-.title-item:hover {
-  cursor: pointer;
-  border: 2px solid rgb(249, 106, 106);
-}
 
 .title-item img {
   height: 8vmin;
@@ -18,7 +14,7 @@
   height: 10vmin;
   display: flex;
   align-items: center;
-  font-size: max(1.3vw, 10px);
+  font-size: max(1.3vw, 11px);
   text-shadow: 1px 1px 5px white;
 }
 
@@ -28,6 +24,7 @@
 .title-item p:nth-child(2) {
   padding: 0 3%;
   width: 40%;
+  font-style: italic;
 }
 .title-item p:nth-child(3) {
   width: 40%;

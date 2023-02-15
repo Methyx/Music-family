@@ -4,13 +4,21 @@ import PlaylistTitle from "../components/PlaylistTitle";
 // style
 import "../style/playlist.css";
 
-const Playlist = () => {
+const Playlist = ({ setTitleToPlay }) => {
   return (
     <div className="playlist">
-      <h1>La Playlist</h1>
+      <h1>On écoute quoi ?</h1>
       <div className="items">
         {playlist.map((item, index) => {
-          return <PlaylistTitle key={index} item={item} />;
+          return (
+            <div className="song">
+              <PlaylistTitle
+                key={index}
+                item={item}
+                setTitleToPlay={setTitleToPlay}
+              />
+            </div>
+          );
         })}
       </div>
     </div>

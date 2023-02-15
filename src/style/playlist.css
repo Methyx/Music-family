@@ -3,7 +3,8 @@
   height: 50vmin;
   margin-left: 5%;
   margin-top: 10vmin;
-  background-color: rgb(150, 150, 150, 0.5);
+  /* background-color: rgb(150, 150, 150, 0.5); */
+  background-color: rgb(180, 180, 180, 0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +12,8 @@
   border-radius: 5px;
 }
 .playlist h1 {
-  font-size: 2vw;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 2.5vw;
   margin: 5% 0;
 }
 .playlist .items {
@@ -21,15 +23,21 @@
   border: 3px solid black;
   margin-bottom: 10px;
 }
-.playlist .title-item:nth-child(2n) {
+.playlist .song:nth-child(2n) {
   background-color: rgba(153, 81, 81, 0.5);
 }
-.playlist .title-item:nth-child(2n + 1) {
+.playlist .song:nth-child(2n + 1) {
   background-color: rgba(171, 33, 33, 0.5);
 }
 
-@media screen and (max-width: 900px) {
+.song:hover {
+  cursor: pointer;
+  border: 2px solid rgb(249, 106, 106);
+}
+
+@media screen and (max-width: 800px) {
   .playlist {
     width: 80%;
+    margin: 1vmin auto;
   }
 }
