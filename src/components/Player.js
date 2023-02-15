@@ -12,7 +12,7 @@ const Player = ({ titleToPlay }) => {
       <div className="player-head">
         <PlaylistTitle item={titleToPlay} setTitleToPlay={null} />
       </div>
-      <AudioPlayer src={titleToPlay.link} />
+      <AudioPlayer src={titleToPlay?.link} />
     </div>
   );
 };

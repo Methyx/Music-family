@@ -2,7 +2,9 @@
 import "../style/playlist-title.css";
 
 const PlaylistTitle = ({ item, setTitleToPlay }) => {
-  return (
+  return item === null ? (
+    <></>
+  ) : (
     <div
       className="title-item"
       onClick={() => {
