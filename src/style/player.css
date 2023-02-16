@@ -4,6 +4,9 @@
   background-color: rgb(230, 230, 230, 0.8);
   border-radius: 10px;
 }
+.player .player-head {
+  height: 100px;
+}
 .player .rhap_container {
   background-color: transparent;
 }
