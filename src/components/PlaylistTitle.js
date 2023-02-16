@@ -4,7 +4,7 @@ import "../style/playlist-title.css";
 // img
 import boulon from "../img/boulon.gif";
 
-const PlaylistTitle = ({ item }) => {
+const PlaylistTitle = ({ item, ledOn }) => {
   return item === null ? (
     <></>
   ) : (
@@ -18,6 +18,7 @@ const PlaylistTitle = ({ item }) => {
           <img src={item.image} alt={`logo de ${item.author}`} />
         </p>
         <p>{item.author}</p>
+        <div className={ledOn ? "led on" : "led"}></div>
         <p>{item.title}</p>
       </div>
     </div>

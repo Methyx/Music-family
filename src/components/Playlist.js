@@ -69,7 +69,10 @@ const Playlist = ({ playlistData, titleToPlay, setTitleToPlay }) => {
                   handlePlaySong(item);
                 }}
               >
-                <PlaylistTitle item={item} />
+                <PlaylistTitle
+                  item={item}
+                  ledOn={item.title === titleToPlay?.title}
+                />
               </div>
             );
           })}
