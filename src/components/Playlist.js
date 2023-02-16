@@ -88,7 +88,7 @@ const Playlist = ({ playlistData, titleToPlay, setTitleToPlay }) => {
             handlePlaySong(titleInFront);
           }}
         >
-          Play
+          Choisir
         </button>
         <button className="metal round" onClick={handleNextSong}>
           {">"}
