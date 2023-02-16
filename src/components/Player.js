@@ -10,9 +10,11 @@ const Player = ({ titleToPlay }) => {
   return (
     <div className="player">
       <div className="player-head">
-        <PlaylistTitle item={titleToPlay} setTitleToPlay={null} />
+        <PlaylistTitle item={titleToPlay} />
       </div>
-      <AudioPlayer src={titleToPlay?.link} />
+      <div className="audio-player">
+        <AudioPlayer src={titleToPlay?.link} />
+      </div>
     </div>
   );
 };

@@ -1,22 +1,19 @@
 .player {
-  width: 40%;
-  margin: 15vmin auto;
-  background-image: url(../img/metal-texture.gif);
-  border-radius: 10px;
+  width: 80%;
+  margin: 20px auto;
 }
 .player .player-head {
+  background-image: url(../img/metal-texture.gif);
   height: 100px;
+  border: 2px solid rgb(109, 42, 42);
+  border-radius: 10px;
+}
+.player .audio-player {
+  background-color: rgba(0, 255, 255, 0.5);
+  background-image: url(../img/brushed-alum.png);
+  border: 2px solid rgb(109, 42, 42);
+  border-radius: 5px;
 }
 .player .rhap_container {
-  background-image: url(../img/brushed-alum.png);
-  /* background-color: rgb(230, 230, 230, 0.7); */
-  /* background-color: transparent; */
-}
-.player .rhap_time {
-}
-
-@media screen and (max-width: 800px) {
-  .player {
-    width: 80%;
-  }
+  background-color: transparent;
 }

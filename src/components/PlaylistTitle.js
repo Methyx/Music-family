@@ -4,16 +4,11 @@ import "../style/playlist-title.css";
 // img
 import boulon from "../img/boulon.gif";
 
-const PlaylistTitle = ({ item, setTitleToPlay }) => {
+const PlaylistTitle = ({ item }) => {
   return item === null ? (
     <></>
   ) : (
-    <div
-      className="title-item"
-      onClick={() => {
-        setTitleToPlay(item);
-      }}
-    >
+    <div className="title-item">
       <img className="boulon number1" src={boulon} alt="boulon" />
       <img className="boulon number2" src={boulon} alt="boulon" />
       <img className="boulon number3" src={boulon} alt="boulon" />

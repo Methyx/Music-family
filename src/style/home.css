@@ -33,16 +33,16 @@
   width: 100%;
   height: 1px;
 }
-.home-content {
+/* .home-content {
   display: flex;
-}
+} */
 
 /* RESPONSIVE */
 @media screen and (max-width: 800px) {
   .home {
     animation-duration: 400s;
   }
-  .home-content {
+  /* .home-content {
     flex-direction: column-reverse;
-  }
+  } */
 }

@@ -1,18 +1,47 @@
 import { useState } from "react";
 
-import playlist from "../assets/playlist.json";
 import PlaylistTitle from "../components/PlaylistTitle";
 
 // style
 import "../style/metal.css";
 import "../style/playlist.css";
 
-const Playlist = ({ setTitleToPlay }) => {
+const Playlist = ({ playlistData, titleToPlay, setTitleToPlay }) => {
+  // functions
+  const handleNextSong = () => {
+    let nextAngle = rotate - rotationAngle;
+    setRotate(nextAngle);
+    let nextSongIndex = playlistData.indexOf(titleInFront) + 1;
+    if (nextSongIndex > playlistData.length - 1) {
+      nextSongIndex = 0;
+    }
+    setTitleInFront(playlistData[nextSongIndex]);
+  };
+  const handlePrevSong = () => {
+    let nextAngle = rotate + rotationAngle;
+    setRotate(nextAngle);
+    let prevSongIndex = playlistData.indexOf(titleInFront) - 1;
+    if (prevSongIndex < 0) {
+      prevSongIndex = playlistData.length - 1;
+    }
+    setTitleInFront(playlistData[prevSongIndex]);
+  };
+  const handlePlaySong = (song) => {
+    setTitleToPlay(null);
+    setTimeout(() => {
+      setTitleToPlay(song);
+    }, 100);
+  };
+
+  // init
+  const [titleInFront, setTitleInFront] = useState(playlistData[0]);
   const [rotate, setRotate] = useState(0);
-  const nbSongs = playlist.length;
+  const nbSongs = playlistData.length;
   const rotationAngle = 360 / nbSongs;
   const translationZ =
     1.2 * (50 / Math.tan(((rotationAngle / 2) * Math.PI) / 180));
+
+  // Return
   return (
     <div className="playlist">
       <h1>On écoute quoi ?</h1>
@@ -26,7 +55,7 @@ const Playlist = ({ setTitleToPlay }) => {
             transform: `translateZ(-${translationZ}px) rotateX(${rotate}deg)`,
           }}
         >
-          {playlist.map((item, index) => {
+          {playlistData.map((item, index) => {
             return (
               <div
                 className="song"
@@ -36,29 +65,29 @@ const Playlist = ({ setTitleToPlay }) => {
                     rotationAngle * index
                   }deg) translateZ(${translationZ}px)`,
                 }}
+                onClick={() => {
+                  handlePlaySong(item);
+                }}
               >
-                <PlaylistTitle item={item} setTitleToPlay={setTitleToPlay} />
+                <PlaylistTitle item={item} />
               </div>
             );
           })}
         </div>
       </div>
       <div className="control">
-        <button
-          className="metal round"
-          onClick={() => {
-            setRotate((r) => r + rotationAngle);
-          }}
-        >
+        <button className="metal round" onClick={handlePrevSong}>
           {"<"}
         </button>
-        <button className="metal rectangle">Play</button>
         <button
-          className="metal round"
+          className="metal rectangle"
           onClick={() => {
-            setRotate((r) => r - rotationAngle);
+            handlePlaySong(titleInFront);
           }}
         >
+          Play
+        </button>
+        <button className="metal round" onClick={handleNextSong}>
           {">"}
         </button>
       </div>
