@@ -18,7 +18,9 @@ const PlaylistTitle = ({ item, ledOn }) => {
           <img src={item.image} alt={`logo de ${item.author}`} />
         </p>
         <p>{item.author}</p>
-        <div className={ledOn ? "led on" : "led"}></div>
+        <div
+          className={ledOn === null ? "led" : ledOn ? "led on" : "led off"}
+        ></div>
         <p>{item.title}</p>
       </div>
     </div>

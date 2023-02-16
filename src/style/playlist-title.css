@@ -67,6 +67,11 @@
   height: 10px;
   margin-top: 45px;
 }
+.title-item .led.off {
+  border-radius: 50%;
+  border: 1px solid rgb(131, 128, 128);
+  background-color: rgb(225, 223, 220);
+}
 .title-item .led.on {
   width: 10px;
   height: 10px;
