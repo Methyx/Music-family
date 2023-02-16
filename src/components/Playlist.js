@@ -4,6 +4,7 @@ import playlist from "../assets/playlist.json";
 import PlaylistTitle from "../components/PlaylistTitle";
 
 // style
+import "../style/metal.css";
 import "../style/playlist.css";
 
 const Playlist = ({ setTitleToPlay }) => {
@@ -20,29 +21,30 @@ const Playlist = ({ setTitleToPlay }) => {
         >
           {playlist.map((item, index) => {
             return (
-              <div className="song">
-                <PlaylistTitle
-                  key={index}
-                  item={item}
-                  setTitleToPlay={setTitleToPlay}
-                />
+              <div className="song" key={index}>
+                <PlaylistTitle item={item} setTitleToPlay={setTitleToPlay} />
               </div>
             );
           })}
         </div>
+      </div>
+      <div className="control">
         <button
-          onClick={() => {
-            setRotate((r) => r - 60);
-          }}
-        >
-          +
-        </button>
-        <button
+          className="metal round"
           onClick={() => {
             setRotate((r) => r + 60);
           }}
         >
-          -
+          {"<"}
+        </button>
+        <button className="metal rectangle">Play</button>
+        <button
+          className="metal round"
+          onClick={() => {
+            setRotate((r) => r - 60);
+          }}
+        >
+          {">"}
         </button>
       </div>
     </div>

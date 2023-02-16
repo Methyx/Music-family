@@ -1,7 +1,8 @@
 .player {
   width: 40%;
   margin: 15vmin auto;
-  background-color: rgb(230, 230, 230, 0.8);
+  background-color: rgb(230, 230, 230, 0.7);
+  background-image: url(../img/brushed-alum.png);
   border-radius: 10px;
 }
 .player .player-head {
