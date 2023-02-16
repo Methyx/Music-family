@@ -1,15 +1,16 @@
 .player {
   width: 40%;
   margin: 15vmin auto;
-  background-color: rgb(230, 230, 230, 0.7);
-  background-image: url(../img/brushed-alum.png);
+  background-image: url(../img/metal-texture.gif);
   border-radius: 10px;
 }
 .player .player-head {
   height: 100px;
 }
 .player .rhap_container {
-  background-color: transparent;
+  background-image: url(../img/brushed-alum.png);
+  /* background-color: rgb(230, 230, 230, 0.7); */
+  /* background-color: transparent; */
 }
 .player .rhap_time {
 }

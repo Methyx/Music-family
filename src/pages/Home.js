@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <main className="home">
       <div className="empty"></div>
-      <div className="content">
+      <div className="home-content">
         <Playlist setTitleToPlay={setTitleToPlay} />
         <Player titleToPlay={titleToPlay} />
       </div>

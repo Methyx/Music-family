@@ -33,7 +33,7 @@
   width: 100%;
   height: 1px;
 }
-.home .content {
+.home-content {
   display: flex;
 }
 
@@ -42,7 +42,7 @@
   .home {
     animation-duration: 400s;
   }
-  .home .content {
+  .home-content {
     flex-direction: column-reverse;
   }
 }
