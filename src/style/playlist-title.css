@@ -46,7 +46,7 @@
   display: flex;
   height: 100%;
   align-items: center;
-  font-size: max(1.5vw, 12px);
+  font-size: max(1.1vw, 10px);
   text-shadow: 1px 1px 5px white;
 }
 
@@ -57,7 +57,7 @@
   padding: 0 3%;
   width: 35%;
   overflow: hidden;
-  line-height: 2.5vw;
+  line-height: max(1.5vw, 12px);
   position: relative;
 }
 .title-item .title-content .title-authors-content {
@@ -71,17 +71,16 @@
     top: 3vw;
   }
   to {
-    top: -7vw;
+    top: -8vw;
   }
 }
 .title-item .title-content .title-authors-content p:nth-child(1) {
-  margin-top: 5%;
+  margin: 5% 0;
   font-style: italic;
   text-decoration: underline black;
 }
 .title-item .title-content .title-authors-content :not(p:nth-child(1)) {
-  font-size: max(1.1vw, 1px);
-  line-height: 2vw;
+  font-size: max(1vw, 8px);
 }
 .title-item .title-content .title-title {
   width: 40%;
