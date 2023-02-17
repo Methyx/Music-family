@@ -3,36 +3,73 @@
     "title": "The Loneliest",
     "author": "Maneskin",
     "link": "/audio/The_Loneliest - Family.mp3",
-    "image": "/img/Maneskin_logo.png"
+    "image": "/img/Maneskin_logo.png",
+    "featuring": [
+      "Chant Lead : Lucie",
+      "Choeurs : Céline",
+      "Basse : Céline",
+      "Batterie : Phil"
+    ]
   },
   {
     "title": "Final Masquerade",
     "author": "Linkin Park",
     "link": "/audio/Final Masquerade v4.mp3",
-    "image": "/img/Logo_linkin_park.png"
+    "image": "/img/Logo_linkin_park.png",
+    "featuring": [
+      "Chant Lead : Lucie",
+      "Choeurs : Lucie",
+      "Basse : Céline",
+      "Batterie : Phil"
+    ]
   },
   {
     "title": "Just Tonight",
     "author": "The Pretty Reckless",
     "link": "/audio/Just Tonight - v3.mp3",
-    "image": "/img/The_Pretty_Reckless.png"
+    "image": "/img/The_Pretty_Reckless.png",
+    "featuring": [
+      "Chant Lead : Lucie",
+      "Choeurs : Céline",
+      "Basse : Céline",
+      "Batterie : Phil"
+    ]
   },
   {
     "title": "Love Hurts",
     "author": "Incubus",
     "link": "/audio/Love Hurts - Family v4.mp3",
-    "image": "/img/Incubus_Logo.png"
+    "image": "/img/Incubus_Logo.png",
+    "featuring": [
+      "Chant Lead : Céline",
+      "Choeurs : Lucie",
+      "Basse : Céline",
+      "Batterie : Phil"
+    ]
   },
   {
     "title": "What I've Done",
     "author": "Linkin Park",
     "link": "/audio/What i ve done - Family.mp3",
-    "image": "/img/Logo_linkin_park.png"
+    "image": "/img/Logo_linkin_park.png",
+    "featuring": [
+      "Piano : Adelin",
+      "Chant Lead : Lucie",
+      "Choeurs : Lucie",
+      "Basse : Céline",
+      "Batterie : Phil"
+    ]
   },
   {
     "title": "Your Song",
     "author": "Elton John",
     "link": "/audio/Your Song - V4.mp3",
-    "image": "/img/Elton_John_Logo.svg"
+    "image": "/img/Elton_John_Logo.svg",
+    "featuring": [
+      "Piano : Vincent",
+      "Chant Lead : Lucie",
+      "Basse : Céline",
+      "Batterie : Phil"
+    ]
   }
 ]

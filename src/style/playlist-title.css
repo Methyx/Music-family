@@ -7,6 +7,7 @@
   padding: 0 10px;
   position: relative;
 }
+
 .title-item .boulon {
   width: 15px;
   height: 15px;
@@ -31,17 +32,17 @@
   bottom: 5px;
   right: 5px;
 }
-.title-item .content {
+.title-item .title-content {
   display: flex;
   height: 100%;
   width: 100%;
 }
-.title-item img {
+.title-item .title-content .title-logo img {
   height: 80%;
   max-width: 80%;
   object-fit: contain;
 }
-.title-item p {
+.title-item .title-content div {
   display: flex;
   height: 100%;
   align-items: center;
@@ -49,30 +50,55 @@
   text-shadow: 1px 1px 5px white;
 }
 
-.title-item p:nth-child(1) {
+.title-item .title-content .title-logo {
   width: 20%;
 }
-.title-item p:nth-child(2) {
+.title-item .title-content .title-authors {
   padding: 0 3%;
   width: 35%;
-  font-style: italic;
+  overflow: hidden;
+  line-height: 2.5vw;
+  position: relative;
 }
-.title-item p:nth-child(4) {
+.title-item .title-content .title-authors-content {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  animation: text-scroll 5s infinite alternate-reverse linear;
+}
+@keyframes text-scroll {
+  from {
+    top: 3vw;
+  }
+  to {
+    top: -7vw;
+  }
+}
+.title-item .title-content .title-authors-content p:nth-child(1) {
+  margin-top: 5%;
+  font-style: italic;
+  text-decoration: underline black;
+}
+.title-item .title-content .title-authors-content :not(p:nth-child(1)) {
+  font-size: max(1.1vw, 1px);
+  line-height: 2vw;
+}
+.title-item .title-content .title-title {
   width: 40%;
   justify-content: center;
   font-weight: bold;
 }
-.title-item .led {
+.title-item .title-content .led {
   width: 8px;
   height: 8px;
   margin-top: calc(clamp(60px, 12vmin, 100px) / 2 - 5px);
 }
-.title-item .led.off {
+.title-item .title-content .led.off {
   border-radius: 50%;
   border: 1px solid rgb(131, 128, 128);
   background-color: rgb(225, 223, 220);
 }
-.title-item .led.on {
+.title-item .title-content .led.on {
   border-radius: 50%;
   border: 1px solid rgb(131, 128, 128);
   background-color: red;

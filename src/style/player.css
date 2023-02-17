@@ -4,7 +4,7 @@
 }
 .player .player-head {
   background-image: url(../img/metal-texture.gif);
-  height: 100px;
+  height: clamp(60px, 12vmin, 100px);
   border: 2px solid rgb(109, 42, 42);
   border-radius: 10px;
 }
