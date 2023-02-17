@@ -1,7 +1,7 @@
 .playlist {
-  width: 50%;
-  min-height: 400px;
-  margin-left: 5%;
+  width: 80%;
+  min-height: 300px;
+  margin: 0 auto;
   margin-top: 25px;
   background-image: url(../img/brushed-alum.png);
   display: flex;
@@ -24,9 +24,9 @@
 }
 .playlist .songs-carousel {
   width: 100%;
-  height: 100px;
+  height: clamp(60px, 12vmin, 100px);
   position: absolute;
-  top: calc(50% - 50px);
+  top: calc(50% - clamp(60px, 12vmin, 100px) / 2);
   left: 0px;
   transform-style: preserve-3d;
   transition: transform 1s;
@@ -34,7 +34,7 @@
 .playlist .song {
   position: absolute;
   width: 100%;
-  height: 100px;
+  height: 100%;
   border: 2px solid black;
   background-image: url(../img/metal-texture.gif);
 }
@@ -46,43 +46,22 @@
 .playlist .control {
   margin-top: 20px;
   width: 100%;
-  height: 80px;
+  height: clamp(40px, 8vmin, 80px);
   display: flex;
   justify-content: center;
 }
 .playlist .control button {
   border: none;
-  font-size: 20px;
+  font-size: 3vmin;
   margin: 0 20px;
 }
 .playlist .control .round {
-  width: 50px;
-  height: 50px;
+  width: max(30px, 6vmin);
+  height: max(30px, 6vmin);
   border-radius: 50%;
 }
 .playlist .control .rectangle {
-  width: 150px;
-  height: 50px;
+  width: min(150px, 20vw);
+  height: max(30px, 6vmin);
   border-radius: 5px;
-}
-
-@media screen and (max-width: 800px) {
-  .playlist {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 480px) {
-  .playlist .control .round {
-    width: 30px;
-    height: 30px;
-  }
-  .playlist .control .rectangle {
-    width: 100px;
-    height: 30px;
-    border-radius: 5px;
-  }
-  .playlist .control button {
-    font-size: 14px;
-  }
 }

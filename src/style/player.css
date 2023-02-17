@@ -1,5 +1,5 @@
 .player {
-  width: 80%;
+  width: 60%;
   margin: 20px auto;
 }
 .player .player-head {
@@ -38,4 +38,13 @@
 }
 .player .rhap_container {
   background-color: transparent;
+}
+
+@media screen and (max-width: 800px) {
+  .player {
+    width: 80%;
+  }
+  .player .player-head {
+    height: 80px;
+  }
 }

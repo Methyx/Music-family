@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import PlaylistTitle from "../components/PlaylistTitle";
 
@@ -36,10 +36,21 @@ const Playlist = ({ playlistData, titleToPlay, setTitleToPlay }) => {
   // init
   const [titleInFront, setTitleInFront] = useState(playlistData[0]);
   const [rotate, setRotate] = useState(0);
+  const carousel = useRef(null);
+  const [carouselItemHeight, setCarouselItemHeight] = useState(0);
   const nbSongs = playlistData.length;
   const rotationAngle = 360 / nbSongs;
   const translationZ =
-    1.2 * (50 / Math.tan(((rotationAngle / 2) * Math.PI) / 180));
+    1.2 *
+    (carouselItemHeight / 2 / Math.tan(((rotationAngle / 2) * Math.PI) / 180));
+
+  // useEffect
+  useEffect(() => {
+    setCarouselItemHeight(carousel.current.clientHeight);
+    window.addEventListener("resize", () => {
+      setCarouselItemHeight(carousel.current.clientHeight);
+    });
+  }, []);
 
   // Return
   return (
@@ -51,6 +62,7 @@ const Playlist = ({ playlistData, titleToPlay, setTitleToPlay }) => {
       >
         <div
           className="songs-carousel"
+          ref={carousel}
           style={{
             transform: `translateZ(-${translationZ}px) rotateX(${rotate}deg)`,
           }}
@@ -88,7 +100,7 @@ const Playlist = ({ playlistData, titleToPlay, setTitleToPlay }) => {
             handlePlaySong(titleInFront);
           }}
         >
-          Choisir
+          Play
         </button>
         <button className="metal round" onClick={handleNextSong}>
           {">"}
