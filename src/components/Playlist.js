@@ -84,6 +84,7 @@ const Playlist = ({ playlistData, titleToPlay, setTitleToPlay }) => {
                 <PlaylistTitle
                   item={item}
                   ledOn={item.title === titleToPlay?.title}
+                  front={item.title === titleInFront?.title}
                 />
               </div>
             );

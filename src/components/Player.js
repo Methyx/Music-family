@@ -13,7 +13,7 @@ const Player = ({ titleToPlay }) => {
   return (
     <div className="player">
       <div className={onplay ? "player-head onplay" : "player-head"}>
-        <PlaylistTitle item={titleToPlay} ledOn={null} />
+        <PlaylistTitle item={titleToPlay} ledOn={null} front={true} />
       </div>
       <div className="audio-player">
         <AudioPlayer

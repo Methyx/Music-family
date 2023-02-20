@@ -4,7 +4,7 @@ import "../style/playlist-title.css";
 // img
 import boulon from "../img/boulon.gif";
 
-const PlaylistTitle = ({ item, ledOn }) => {
+const PlaylistTitle = ({ item, ledOn, front }) => {
   return item === null ? (
     <></>
   ) : (
@@ -18,11 +18,17 @@ const PlaylistTitle = ({ item, ledOn }) => {
           <img src={item.image} alt={`logo de ${item.author}`} />
         </div>
         <div className="title-authors">
-          <section className="title-authors-content">
+          <section
+            className={
+              front ? "title-authors-content front" : "title-authors-content"
+            }
+          >
             <p>{item.author.toUpperCase()}</p>
-            {item.featuring?.map((p, i) => {
-              return <p key={i}>{p}</p>;
-            })}
+            {front
+              ? item.featuring?.map((p, i) => {
+                  return <p key={i}>{p}</p>;
+                })
+              : null}
           </section>
         </div>
         <div

@@ -14,7 +14,7 @@
   {
     "title": "Final Masquerade",
     "author": "Linkin Park",
-    "link": "/audio/Final Masquerade v4.mp3",
+    "link": "/audio/Final Masquerade v6.mp3",
     "image": "/img/Logo_linkin_park.png",
     "featuring": [
       "Chant Lead : Lucie",
@@ -68,6 +68,18 @@
     "featuring": [
       "Piano : Vincent",
       "Chant Lead : Lucie",
+      "Basse : Céline",
+      "Batterie : Phil"
+    ]
+  },
+  {
+    "title": "Do Ya Feel My Love",
+    "author": "Stereophonics",
+    "link": "/audio/Do Ya Feel My Love - V3.mp3",
+    "image": "/img/Stereophonics-logo.png",
+    "featuring": [
+      "Chant Lead : Lucie",
+      "Choeurs : Céline",
       "Basse : Céline",
       "Batterie : Phil"
     ]
